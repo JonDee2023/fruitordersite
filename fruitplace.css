@@ -8,7 +8,7 @@ body {
     width:100%
 }
 
-#menu1-div{
+.products-list{
     background-color: gray;
     width: 100%;
     height: 50px;
@@ -145,7 +145,7 @@ body {
     height: 150px
 }
 
-#menu2-div{
+#product-list{
     background-color: red;
     width: 100%;
     height: 50px;
@@ -173,11 +173,6 @@ body {
     text-decoration: underline;
 }
 
-
-.product-list{
-    background-color: #be5d5d;
-    display: block;
-}
 
 .navbar{
     background: #be5d5d;
@@ -221,7 +216,3 @@ body {
     text-align: center;
 }
 
-#products{
-    background-color: #000;
-    display: block;
-}
