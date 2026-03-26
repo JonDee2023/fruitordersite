@@ -144,3 +144,49 @@ body {
     background-color: rgb(2, 63, 63);
     height: 150px
 }
+
+.product-list{
+    background-color: #be5d5d;
+}
+
+.navbar{
+    background: #be5d5d;
+    padding: 15px;
+}
+
+
+.list-category{
+    position: relative;
+    display: inline-block;
+}
+
+/* Hidden menu */
+.cat-content{
+    display: none;
+    position: fixed;
+    background: rgb(172, 79, 79);
+    min-width: 1200px;
+    min-height:400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Links inside dropdown */
+.cat-content a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(241, 237, 237);
+}
+
+/* Hover effect */
+.cat-content a:hover{
+    background: none;
+    text-decoration: underline;
+}
+
+/* Show dropdown on hover */
+.list-category:hover .cat-content{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
