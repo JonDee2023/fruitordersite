@@ -147,6 +147,7 @@ body {
 
 .product-list{
     background-color: #be5d5d;
+    display: block;
 }
 
 .navbar{
@@ -189,4 +190,9 @@ body {
     display: block;
     text-decoration: none;
     text-align: center;
+}
+
+#products{
+    background-color: #000;
+    display: block;
 }
