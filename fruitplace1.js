@@ -1,2 +1,2 @@
 let hd = document.getElementById("biz-name");
-hd.innerText = "fruitPlace.ng";
+hd.innerText = "FarmHouse.ng";
