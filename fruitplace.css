@@ -4,10 +4,116 @@ body {
 
 .heading{
     background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height:50px;
     width:100%
 }
 
+.heading img {
+    cursor: pointer;
+}
+
+.menu-bar{
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: greenyellow;
+  height: 50px;
+  padding: 0 20px;
+}
+
+/*/* IMPORTANT 
+.menu-container {
+  position: relative;
+}
+
+.menu-bar {
+  width: 35px;
+  cursor: pointer;
+}
+
+/* Hidden by default 
+.nav-bar {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 10px;
+  display: none;
+  z-index: 1000; /* 🔥 important 
+}
+
+/* SHOW ON HOVER 
+.menu-container:hover .nav-bar {
+  display: block;
+}*/
+
+.nav-bar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 150px;
+  height: 200px;
+  background: rgb(48, 91, 102);
+  color: white;
+  padding: 0px;
+  display: none; /* hidden initially*/ 
+  z-index: 1000;
+}
+
+
+.nav-bar.show {
+  display: block;
+}
+
+ul {
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 10;
+}
+
+.list-itm{
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-itm:hover{
+    text-decoration: underline;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product1{
+    background-color: rgb(240, 222, 203);
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 
 #itm1{
     margin-left: 200px;
@@ -19,11 +125,12 @@ body {
 
 
 #head1{
+    display: block;
     color: white;
     font-size: large;
     font-style: italic;
-    text-align: end;
-    margin-right: 30px;
+    margin-top: 7.5px;
+    margin-right: 15px;
 }
 
 #biz-name{
@@ -89,21 +196,28 @@ body {
     text-align: center;
 }
 
+#order-head2{
+    color: antiquewhite;
+    font-style: italic;
+}
+
 .order-link {
     display:block;
     width: 300px;
     height: 80px;
-    color:blueviolet;
-    background-color: rgb(243, 149, 26);
-    margin-top: 20px;
+    background-color: rgb(22, 156, 105);
     margin-left: 480px;
-    margin-top: 80px;
+    margin-top: 50px;
     border-radius: 15px;
+    }
+
+.text{
+    color:rgb(218, 201, 235);
+    padding-top: 20px;
     padding-left: 10px;
-    padding-right: auto;
-    padding-bottom: auto;
-    padding-top: 15px;
+    padding-right: 10px;
     font-size: 25px
+
 }
 
 .order-link:hover {
