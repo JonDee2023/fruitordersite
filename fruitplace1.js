@@ -27,3 +27,9 @@ document.addEventListener("click", function (e) {
     navBar.classList.remove("show");
   }
 });
+
+
+document.getElementById("itm1").addEventListener("click", function (e){
+    window.open('aboutus.html', "_blank")
+
+});
