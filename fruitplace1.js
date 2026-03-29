@@ -29,7 +29,7 @@ document.addEventListener("click", function (e) {
 });
 
 
-document.getElementById("itm1").addEventListener("click", function (e){
+document.getElementById("itm-aboutus").addEventListener("click", function (e){
     window.open('aboutus.html', "_blank")
 
 });
