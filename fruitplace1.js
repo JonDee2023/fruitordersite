@@ -33,3 +33,23 @@ document.getElementById("itm-aboutus").addEventListener("click", function (e){
     window.open('aboutus.html', "_blank")
 
 });
+
+document.getElementById("itm-health-tips").addEventListener("click", function (e){
+    window.open('healthtips.html', "_blank")
+
+});
+
+document.getElementById("itm-fruits").addEventListener("click", function (e){
+    window.open('fruits.html', "_blank")
+
+});
+
+document.getElementById("itm-lifestyle").addEventListener("click", function (e){
+    window.open('lifestyle.html', "_blank")
+
+});
+
+document.getElementById("itm-news").addEventListener("click", function (e){
+    window.open('news.html', "_blank")
+
+});
