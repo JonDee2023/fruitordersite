@@ -331,3 +331,7 @@ body{
 .heading-div{
     background-image: url("img1.webp");
 }
+
+.h1-class{
+    color: rgb(240, 212, 212);
+}
