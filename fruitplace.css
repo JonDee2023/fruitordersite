@@ -339,13 +339,14 @@ body{
      width: 200px;
      height: 30px;
      border-radius: 7px;
-}s
+}
 
 #btnpg{
     
     width: 100px;
     height: 30px;
     border-radius: 7px;
+    background-color: blue;
 
 }
 
@@ -357,4 +358,11 @@ body{
 
 .h1-class{
     color: rgb(240, 212, 212);
+}
+
+#inputsa{
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+
 }
