@@ -333,5 +333,9 @@ body{
 }
 
 .h1-class{
-    color: rgb(240, 212, 212);
+    color: rgba(72, 165, 60, 0.85);
+}   
+
+#h1-span{
+    color:white;
 }
