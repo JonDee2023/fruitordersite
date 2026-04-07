@@ -360,9 +360,30 @@ body{
     color: rgb(240, 212, 212);
 }
 
-#inputsa{
+.inputsa{
     width: 200px;
     height: 30px;
     border-radius: 7px;
 
+}
+
+#ulna{
+    margin-left: 20px;
+}
+
+#uemaila{
+    margin-top: 15px;
+}
+
+#signupbtna{
+
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: blue;
+
+}
+
+#signuph1a{
+    color: blue;
 }
