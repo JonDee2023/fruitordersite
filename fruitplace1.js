@@ -53,3 +53,6 @@ document.getElementById("itm-news").addEventListener("click", function (e){
     window.open('news.html', "_blank")
 
 });
+
+
+

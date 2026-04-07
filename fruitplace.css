@@ -339,13 +339,14 @@ body{
      width: 200px;
      height: 30px;
      border-radius: 7px;
-}s
+}
 
 #btnpg{
     
     width: 100px;
     height: 30px;
     border-radius: 7px;
+    background-color: blue;
 
 }
 
@@ -356,9 +357,20 @@ body{
 }
 
 .h1-class{
+<<<<<<< HEAD
     color: rgba(72, 165, 60, 0.85);
 }   
 
 #h1-span{
     color:white;
+=======
+    color: rgb(240, 212, 212);
+}
+
+#inputsa{
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+
+>>>>>>> f793a63331c7eb38f15f741fc561ab864cd23ee9
 }
