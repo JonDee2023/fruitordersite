@@ -18,7 +18,9 @@ function addToCart(name, price, image) {
     updateCart();
 }
 
-const prodDesc = [
+document.addEventListener(DOMContentLoaded, ()=>{
+
+    const prodDesc = [
     {img: "shoe.jpg",
      desc: "Gucci shoe",
      price: "#30,000"
@@ -58,4 +60,7 @@ document.getElementById("nextBtn").addEventListener("click", ()=>{
 document.getElementById("prevBtn").addEventListener("click", () => {
     index = (index - 1 + prodDesc.length) % prodDesc.length;
     updateProduct();
+});
+
+
 });
