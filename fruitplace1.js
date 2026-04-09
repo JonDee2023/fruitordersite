@@ -28,6 +28,73 @@ document.addEventListener("click", function (e) {
   }
 });
 
+const contents1 = [
+    {img: "img1.webp"},
+    {img: "fruit-1.jpg"},
+    {img: "fruit-2.jpg"},
+    {img: "fruit-3.jpg"},
+    {img: "jumia2.gif"}
+    
+]
+
+let index = 0;
+
+function changeAd1(){
+    index = (index+1) %
+    contents1.length;
+
+    document.getElementById("card-img1").src = contents1[index].img;
+
+}
+
+// set interval to change every 5s
+setInterval(changeAd1, 5000);
+
+const contents2 = [
+    {img: "fruit-7.webp"},
+    {img: "fruit-8.webp"},
+    {img: "img10.webp"},
+    {img: "img10.jpg"},
+    {img: "jumia3.jpg"}
+]
+
+let i = 0;
+
+function changeAd2(){
+    i = (i+1) %
+    contents2.length;
+
+    document.getElementById("card-img2").src = contents2[i].img;
+
+}
+
+// set interval to change every 10s
+setInterval(changeAd2, 10000);
+
+
+const contents3 = [
+    {img: "jumia4.jpg"},
+    {img: "fruit-8.webp"},
+    {img: "img5.webp"},
+    {img: "img6.webp"},
+    {img: "fruit4.jpg"}
+]
+
+let ind = 0;
+
+function changeAd3(){
+    ind = (ind+1) %
+    contents3.length;
+
+    document.getElementById("card-img3").src = contents3[ind].img;
+
+}
+
+// set interval to change every 5s
+setInterval(changeAd3, 10000);
+
+
+
 
 document.getElementById("itm-aboutus").addEventListener("click", function (e){
     window.open('aboutus.html', "_blank")

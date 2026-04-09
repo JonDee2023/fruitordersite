@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fruitplace.css">
+    </head>
+    <body>
+
+        <div class="heading">
+
+                <img src="menu.png" class="menu-bar" id="menuBtn">
+
+                <div class="nav-bar" id="navBar">
+                    <ul>
+                        <li><a href="#" class="list-itm">Home </a></li>
+                        <li><a href="#" class="list-itm">Shop </a></li>
+                        <li><a href="#" class="list-itm">Account </a></li>
+                        <li><a href="#" class="list-itm">Carts </a></li>
+                        <li><a href="#" class="list-itm">Help? ></a></li>
+                        <li><a href="#" class="list-itm">Contact ></a></li>
+                        <li><a href="#" class="list-itm">Logout  </a></li>
+                    </ul>
+                </div>
+
+
+
+
+           <h1 id="head1">Welcome to <br><a href="#" id="biz-name"></a></h1>
+        </div>
+        
+        
+    
+    <div id="menu1-div">
+        <a href="aboutus.html" class="itm" id="itm-aboutus">About Us</a>
+        <a href="#" class="itm" id="itm-health-tips">Health Tips</a>
+        <a href="#" class="itm" id="itm-fruits">Fruits & You</a>
+       <a href="#" class="itm" id="itm-lifestyle">Lifestyle</a>
+       <a href="#" class="itm" id="itm-news">News</a>
+
+    </div>
+
+<div class="image-scroll">
+  <div class="scroll-track">
+    <img src="img1.webp" alt="">
+    <img src="img2.webp" alt="">
+    <img src="img3.jpg" alt="">
+    <img src="img4.jpg" alt="">
+    <img src="img5.webp" alt="">
+    <img src="img6.webp" alt="">
+    <img src="img7.webp" alt="">
+    <img src="img8.webp" alt="">
+    <img src="img9.webp" alt="">
+
+
+
+    <!-- duplicate images for seamless loop -->
+    <img src="img1.webp" alt="">
+    <img src="img2.webp" alt="">
+    <img src="img3.jpg" alt="">
+    <img src="img4.jpg" alt="">
+    <img src="img5.webp" alt="">
+    <img src="img6.webp" alt="">
+    <img src="img7.webp" alt="">
+    <img src="img8.webp" alt="">
+    <img src="img9.webp" alt="">
+  </div>
+
+</div>
+
+<div class="product">
+    <img src="shoe.jpg" width="150" id="prod-img">
+    <h3 id="prod-desc">Gucci Shoe</h3>
+    <p>
+        <data value=30000 id="prod-price">#30,000</data>
+    </p>
+    <button onclick="addToCart('Gucci Shoe', 30000, 'shoe.jpg')">
+        Add to Cart
+    </button>
+<p>
+    <button id="prevBtn"> << Previous </button> <span> <button id="nextBtn"> Next >></button></span>
+
+</p>
+</div>
+
+
+
+<script src="fruitplace1.js"></script>
+<script src="products-desc.js"></script>
+
+    </body>
+</html>

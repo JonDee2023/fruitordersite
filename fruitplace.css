@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(107, 148, 224);
+    background-color: blue;
 }
 
 .heading{
@@ -357,20 +357,42 @@ body{
 }
 
 .h1-class{
-<<<<<<< HEAD
     color: rgba(72, 165, 60, 0.85);
 }   
 
 #h1-span{
-    color:white;
-=======
     color: rgb(240, 212, 212);
 }
 
-#inputsa{
+.inputsa{
     width: 200px;
     height: 30px;
     border-radius: 7px;
+}
 
->>>>>>> f793a63331c7eb38f15f741fc561ab864cd23ee9
+#ulna{
+    margin-left: 20px;
+}
+
+#uemaila{
+    margin-top: 15px;
+}
+
+#signupbtna{
+
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: blue;
+
+}
+
+#signuph1a{
+    color: blue;
+}
+
+.rolling-imgs{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
