@@ -18,9 +18,7 @@ function addToCart(name, price, image) {
     updateCart();
 }
 
-document.addEventListener(DOMContentLoaded, ()=>{
-
-    const prodDesc = [
+const prodDesc = [
     {img: "shoe.jpg",
      desc: "Gucci shoe",
      price: "#30,000"
@@ -39,28 +37,28 @@ document.addEventListener(DOMContentLoaded, ()=>{
     ]
 
 
-    let index = 0;
+let idx = 0;
 
-    function updateProduct(){
+function updateProduct(){
         
-        document.getElementById("prod-img").src = prodDesc[index].img;
-        document.getElementById("prod-desc").textContent = prodDesc[index].desc;
-        document.getElementById("prod-price").textContent = prodDesc[index].price;
+    document.getElementById("prod-img").src = prodDesc[idx].img;
+    document.getElementById("prod-desc").textContent = prodDesc[idx].desc;
+    document.getElementById("prod-price").textContent = prodDesc[idx].price;
 
 
-    }
+}
 
     // next button
-    document.getElementById("nextBtn").addEventListener("click", ()=>{
-        index = (index+1) % prodDesc.length;
-        updateProduct();
-    });
+document.getElementById("nextBtn").addEventListener("click", ()=>{
+    idx = (idx+1) % prodDesc.length;
+    updateProduct();
+});
 
     // Previous button
-    document.getElementById("prevBtn").addEventListener("click", () => {
-        index = (index - 1 + prodDesc.length) % prodDesc.length;
-        updateProduct();
-    });
-
-
+document.getElementById("prevBtn").addEventListener("click", () => {
+    idx = (idx - 1 + prodDesc.length) % prodDesc.length;
+    updateProduct();
 });
+
+//console.log(document.getElementById("nextBtn"));
+//console.log(document.getElementById("prevBtn"));
