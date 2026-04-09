@@ -396,3 +396,21 @@ body{
     flex-direction: row;
     justify-content: center;
 }
+
+.product-new{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(233, 189, 189);
+    width:250;
+    height:400;
+    border: 0;
+    border-radius: 3px;
+}
+
+.prd{
+    background-color: whitesmoke;
+    border: 3px solid rebeccapurple;
+    border-radius: 5px;
+    margin-right: 2px;
+}
