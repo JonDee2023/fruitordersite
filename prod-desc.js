@@ -62,3 +62,44 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 
 //console.log(document.getElementById("nextBtn"));
 //console.log(document.getElementById("prevBtn"));
+
+
+let cartContainer = document.getElementById("cart-item");
+let totalDisplay = document.getElementById("cart-total");
+
+function updateCart() {
+    cartContainer.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        total += item.price * item.quantity;
+
+        cartContainer.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.image}" width="80">
+
+                <div>
+                    <h4>${item.name}</h4>
+                    <p>$${item.price}</p>
+
+                    <div>
+                        <button onclick="changeQty(${index}, -1)">-</button>
+                        <span>${item.quantity}</span>
+                        <button onclick="changeQty(${index}, 1)">+</button>
+                    </div>
+
+                    <p>Subtotal: $${item.price * item.quantity}</p>
+                </div>
+
+                <button onclick="removeItem(${index})">X</button>
+            </div>
+        `;
+    });
+
+    totalDisplay.textContent = `Total: $${total}`;
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    updateCart();
+}

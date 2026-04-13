@@ -419,3 +419,18 @@ body{
 .cart-btn{
     cursor: pointer;
 }
+
+.cart-item{
+    display: flex;
+    gap:  15px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item button{
+    margin: 3px;
+    padding: 5px 10px;
+    cursor:pointer;
+}
