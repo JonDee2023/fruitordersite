@@ -1,23 +1,3 @@
-let cart = [];
-
-// Add product to cart
-function addToCart(name, price, image) {
-    const existingItem = cart.find(item => item.name === name);
-
-    if (existingItem) {
-        existingItem.quantity += 1;
-    } else {
-        cart.push({
-            name: name,
-            price: price,
-            image: image,
-            quantity: 1
-        });
-    }
-
-    updateCart();
-}
-
 const prodDesc = [
     {img: "shoe.jpg",
      desc: "Gucci shoe",
@@ -64,42 +44,38 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 //console.log(document.getElementById("prevBtn"));
 
 
-let cartContainer = document.getElementById("cart-item");
-let totalDisplay = document.getElementById("cart-total");
+let cart = JSON.parse(localStorage.getItem("c-cart")) || [];
 
-function updateCart() {
-    cartContainer.innerHTML = "";
-    let total = 0;
+const buttons = document.getElementsByClassName("cart-btn");
 
-    cart.forEach((item, index) => {
-        total += item.price * item.quantity;
+Array.from(buttons).forEach(button => {
+    button.addEventListener("click", function () {
 
-        cartContainer.innerHTML += `
-            <div class="cart-item">
-                <img src="${item.image}" width="80">
+        const name = this.dataset.name;
+        const price = Number(this.dataset.price);
+        const image = this.dataset.image;
 
-                <div>
-                    <h4>${item.name}</h4>
-                    <p>$${item.price}</p>
+        const existingItem = cart.find(item => item.name === name);
 
-                    <div>
-                        <button onclick="changeQty(${index}, -1)">-</button>
-                        <span>${item.quantity}</span>
-                        <button onclick="changeQty(${index}, 1)">+</button>
-                    </div>
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({
+                name: name,
+                price: price,
+                image: image,
+                quantity: 1
+            });
+        }
 
-                    <p>Subtotal: $${item.price * item.quantity}</p>
-                </div>
+        // Save cart
+        localStorage.setItem("c-cart", JSON.stringify(cart));
 
-                <button onclick="removeItem(${index})">X</button>
-            </div>
-        `;
+        
+        updateCart();
+
+        alert(`${name} successfully added to cart.`);
     });
+});
 
-    totalDisplay.textContent = `Total: $${total}`;
-}
 
-function removeItem(index) {
-    cart.splice(index, 1);
-    updateCart();
-}
