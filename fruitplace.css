@@ -419,3 +419,31 @@ body{
 .cart-btn{
     cursor: pointer;
 }
+
+.my-cart{
+    background-color: aliceblue;
+    min-height: 600px;
+    border-radius: 7px;
+}
+
+#cart-item{
+    display: flex;
+    gap:  15px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border: 3px solid #be5d5d;
+    border-radius: 3px;
+}
+
+.carts{
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.cart-item button{
+    margin: 3px;
+    padding: 5px 10px;
+    cursor:pointer;
+}

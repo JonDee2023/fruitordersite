@@ -1,23 +1,3 @@
-let cart = [];
-
-// Add product to cart
-function addToCart(name, price, image) {
-    const existingItem = cart.find(item => item.name === name);
-
-    if (existingItem) {
-        existingItem.quantity += 1;
-    } else {
-        cart.push({
-            name: name,
-            price: price,
-            image: image,
-            quantity: 1
-        });
-    }
-
-    updateCart();
-}
-
 const prodDesc = [
     {img: "shoe.jpg",
      desc: "Gucci shoe",
@@ -62,3 +42,40 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 
 //console.log(document.getElementById("nextBtn"));
 //console.log(document.getElementById("prevBtn"));
+
+
+let cart = JSON.parse(localStorage.getItem("c-cart")) || [];
+
+const buttons = document.getElementsByClassName("cart-btn");
+
+Array.from(buttons).forEach(button => {
+    button.addEventListener("click", function () {
+
+        const name = this.dataset.name;
+        const price = Number(this.dataset.price);
+        const image = this.dataset.image;
+
+        const existingItem = cart.find(item => item.name === name);
+
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({
+                name: name,
+                price: price,
+                image: image,
+                quantity: 1
+            });
+        }
+
+        // Save cart
+        localStorage.setItem("c-cart", JSON.stringify(cart));
+
+        
+        updateCart();
+
+        alert(`${name} successfully added to cart.`);
+    });
+});
+
+
